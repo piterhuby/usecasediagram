@@ -1,0 +1,21 @@
+@startuml
+actor Seller
+actor Buyer
+actor Admin
+
+usecase "List Products" as UC1
+usecase "Remove Products" as UC2
+usecase "purchase Products" as UC3
+usecase "Register Buyer" as UC4
+usecase "Unregister Buyer" as UC5
+usecase "Manage Sellers" as UC6
+usecase "Manage Products" as UC7
+
+Seller -- UC1 : "List Products"
+Seller -- UC2 : "Remove Products"
+Buyer -- UC3 : "Purchase Product"
+Admin -- UC4 : "Register Buyer"
+Admin -- UC5 : "Unregister Buyer"
+Admin -- UC6 : "Manage Sellers"
+Admin -- UC7 : "Manage Product"
+@enduml
